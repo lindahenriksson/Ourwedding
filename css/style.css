@@ -1,11 +1,19 @@
+
 body, html {
   font-family: 'Playfair Display', serif;
   color: #000;
   height: 100%;
   margin: 0px;
 }
+#about{
+  color: #777;
+  background-color:white;
+  padding:10px;
+  text-align:center;
+  text-align: justify;
+}
 a{
-  color: #000;
+  color: black;
 }
 a:hover{
  color: pink;
@@ -25,8 +33,8 @@ button{
   border-radius: 0px;
   color: black;
   height: auto;
-  margin: 10px;
-  padding: 20px; 
+  margin-top: 10px;
+  padding-top: 20px; 
   text-align: center;
   text-transform: uppercase;
   width: auto;
@@ -51,7 +59,8 @@ button.btn.btn-default.btn-lg:hover{
   background-color: black;
   color:white;
 }
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -65,24 +74,24 @@ button.btn.btn-default.btn-lg:hover{
   min-height: 100%;
 }
 
-.bgimg-4 {
-  background-image: url("../img/img_parallax3.jpg");
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url("../img/img_parallax4.jpg");
-  min-height: 400px;
-}
-.bgimg-2{
-  background-attachment: static;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.bgimg-2 {
   background-image: url("../img/img_parallax2.jpg");
   min-height: 400px;
 }
 
+.bgimg-3 {
+  background-image: url("../img/img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
 .caption{
   font-family: 'Playfair Display', serif;
   color: white;
@@ -102,9 +111,13 @@ button.btn.btn-default.btn-lg:hover{
   text-align: center;
   text-shadow: 1px 1px 4px #000;
 }
+
 .caption span.border {
-  font-family: 'Noto Serif', serif;
-  letter-spacing: 3px;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 .col-sm-6.cermony{
   float: left;
@@ -147,21 +160,6 @@ footer p{
   font-size: 10px;
   text-align: center;
 }
-h1.page-header{
-  font-family: 'Playfair Display', serif;
-  margin-top: 10px;
-  text-align: center;
-}
-h1{
-  text-transform: uppercase;
-}
-h2.page-header{
-  margin-top: 100px;
-}
-h4 {
-  font-family: 'Playfair Display', serif;
-  margin-top: 10px;
-}
 img.about{
   height: 300px;
   margin: -40px auto 10px;
@@ -172,25 +170,18 @@ img.about{
   left: 525px;
   position: absolute;
   transform: rotate(89.1682deg) translateZ(0px);
-  top: 230px;
+  top: 190px;
   width: 130px;
 }
-
 p.center{
   text-align: center;
 }
-#pageheader{
-  color: white;
-  font-family: 'Playfair Display', serif;
-  left: 0;
-  position: absolute;
-  text-align: center;
-  text-shadow: 1px 1px 4px #000;
-  top: 40%;
-  width: 100%;
-}
 .page-header{
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
   margin:-60px auto 100px;
+  text-align: center;
+  text-transform: uppercase;
 }
 section {
   background: rgba(255, 255, 255, 0.96);
@@ -240,6 +231,9 @@ li:hover ul a {
   height: 40px;
   line-height: 40px;
 }
+.OurStory{
+  padding: 30px;
+}
 .show-menu {
   text-decoration: none;
   color: #fff;
@@ -254,9 +248,6 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #nav{
     display: block;
 }
-
-/*Responsive Styles*/
-
 @media screen and (max-width : 760px){
   ul {
     position: static;
@@ -272,43 +263,5 @@ input[type=checkbox]:checked ~ #nav{
     display:block;
   }
 }
-@media screen and (min-width: 768px) {
-  /*body{
-    background-attachment: scroll;
-    background: url("../img/img_parallax.jpg") no-repeat center center;
-    overflow-x: hidden;
-  }
-  .col-xs-6{
-    width:50%;
-  }
-  
-  nav.navbar-collapse.collapse{
-    left: 0;
-    margin-left: 0;
-    letter-spacing: 3px;
-  }
-  .line{
-    left: 40%;
-  }
-}
-@media screen and (min-width: 320px) {
- body{
-  background-attachment: scroll;
-  background: url("../img/img_parallax.jpg") no-repeat center center;
-  overflow-x: hidden;
-}
-p{
-  padding:5px;
-  text-align: left;
-}
-  section#thebigday{
-    text-align: center;
-  }
-  section#thebigday button{
-    margin-top: 10px;
-  }
-  section#thebigday div.col-xs-12.col-sm-6{
-    padding-bottom: 20px;
-  }
-}
-
+</style>
+</head>
