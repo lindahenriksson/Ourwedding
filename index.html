@@ -17,12 +17,25 @@
   <li class="icon">
     <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
   </li>
+  <li><a href="#" onclick="i18n.changeLanguage('sv');">Svenska</a></li>
+  <li><a href="#" onclick="i18n.changeLanguage('en');">Engelska</a></li>
 </ul>
 <div class="bgimg-1" id="home">
   <div class="caption">
-    <h1>We getting married</h1>
-    <h3>15 July 2017/ Sunne/ Sweden</h3>
-    <a href="https://goo.gl/forms/hxoavKqhSRmwze3A3"><button type="button" class="btn btn-default btn-lg">Respond now</button></a>
+    <h1 data-translatable> 
+      <span>Vi gifter oss</span>
+      <span>We getting married</span>
+    </h1>
+    <h3 data-translatable>
+      <span>15 Juli 2017/ Sunne/ Sverige</span>
+      <span>15 July 2017/ Sunne/ Sweden</span>
+    </h3>
+    <a  href="https://goo.gl/forms/hxoavKqhSRmwze3A3">
+      <button data-translatable type="button" class="btn btn-default btn-lg">
+        <span>Svara nu</span>
+        <span>Respond now</span>
+      </button>
+    </a>
   </div>
 </div>
 
@@ -220,6 +233,12 @@
     </div><!-- /.container -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/dom-i18n.min.js"></script>
+  <script>
+    var i18n = window.domI18n({
+      languages: ['sv', 'en']
+    });
+  </script>
   <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
