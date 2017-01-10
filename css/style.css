@@ -1,10 +1,13 @@
 
 body, html {
-  font-family: 'Playfair Display', serif;
-  color: #000;
   height: 100%;
-  margin: 0px;
+  margin: 0;
 }
+
+a{
+  color: black;
+}
+
 #about{
   color: #777;
   background-color:white;
@@ -12,42 +15,37 @@ body, html {
   text-align:center;
   text-align: justify;
 }
-a{
-  color: black;
-}
-a:hover{
- color: pink;
- text-decoration: none;
-
-}
-a.page-scroll{
-  color: #FFF;
-  text-shadow: 1px 1px 4px #000;
-}
-a.page-scroll:hover, a.page-scroll:active{
-  background-color: transparent;
-}
-button{
+a.btn.btn-default.btn-lg.active{
+   font-family: 'Playfair Display', serif;
   background-color: white;
-  border: 2px solid black;
-  border-radius: 0px;
-  color: black;
-  height: auto;
+  border: 2px solid  #8a6d3b;
   margin-top: 10px;
-  padding-top: 20px; 
-  text-align: center;
-  text-transform: uppercase;
-  width: auto;
 }
+a.btn.btn-default.btn-lg.active:hover{
+  background-color: #8a6d3b;
+  color:white;
+}
+
+button.btn.btn-default.btn-md.btn-block{
+   font-family: 'Playfair Display', serif;
+  background-color: white;
+  border: 2px solid  #8a6d3b;
+  margin-top: 10px;
+}
+button.btn.btn-default.btn-md.btn-block:hover{
+    background-color: #8a6d3b;
+  color:white;
+}
+
 button:hover{
-  background-color: black;
+  background-color: #8a6d3b;
   color:white;
 }
 button.btn.btn-default.btn-lg{
-  background-color: white;
-  border: 2px solid black;
+  background-color: transparent;
+  border: 2px solid #8a6d3b;
   border-radius: 0px;
-  color: black; 
+  color: #fff; 
   height: auto;
   margin: 10px 0px 0px 20px;
   padding: 20px; 
@@ -56,7 +54,7 @@ button.btn.btn-default.btn-lg{
   width: auto;
 }
 button.btn.btn-default.btn-lg:hover{
-  background-color: black;
+  background-color:#8a6d3b ;
   color:white;
 }
 
@@ -119,6 +117,9 @@ button.btn.btn-default.btn-lg:hover{
   font-size: 25px;
   letter-spacing: 10px;
 }
+.col-lg-6{
+  padding-top: 20px;
+}
 .col-sm-6.cermony{
   float: left;
   text-align: center;
@@ -160,6 +161,21 @@ footer p{
   font-size: 10px;
   text-align: center;
 }
+div.button{
+  text-align: center;
+  padding-top: 30px;
+}
+div h2 {
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+div h3{
+   font-family: 'Playfair Display', serif;
+}
+div h4{
+   font-family: 'Playfair Display', serif;
+}
 img.about{
   height: 300px;
   margin: -40px auto 10px;
@@ -167,16 +183,24 @@ img.about{
 }
 .line{
   border-bottom: 0.5px solid rgba(58, 64, 73, 1);
-  left: 525px;
+  left: 485px;
   position: absolute;
   transform: rotate(89.1682deg) translateZ(0px);
-  top: 190px;
-  width: 130px;
+  top: 220px;
+  width: 200px;
+}
+p{
+  margin-bottom: 10px;
+  color: #000;
 }
 p.center{
+  font-family: 'Playfair Display', serif;
   text-align: center;
+  padding: 10px;
+  line-height: inherit;
 }
 .page-header{
+  color: #8a6d3b;
   font-family: 'Playfair Display', serif;
   margin-top: 10px;
   margin:-60px auto 100px;
@@ -190,6 +214,7 @@ section {
   z-index: 3;
   -webkit-backface-visibility: hidden;
 }
+
 .social-icons{
   color:white;
   font-size: 16px;
@@ -198,70 +223,57 @@ section {
   text-shadow: 1px 1px 4px #000;
 }
 /* NAVBAR */
-#nav{
-  width: 750px;
-  margin:0 auto;
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
 }
-ul {
-  list-style-type:none;
-  margin:0;
-  padding:0;
-}
-li {
-  display:inline-block;
-  float: left;
-  margin-right: 1px;
-}
-li a {
-  display:block;
-  min-width:140px;
-  height: 50px;
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  color: #8a6d3b;
   text-align: center;
-  line-height: 50px;
-  color: #fff;
-  background: #2f3036;
+  padding: 14px 16px;
   text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
 }
-li:hover a {
-  background: #19c589;
+
+ul.topnav li a:hover {
+  background-color: none;
 }
-li:hover ul a {
-  background: #f3f3f3;
-  color: #2f3036;
-  height: 40px;
-  line-height: 40px;
-}
-.OurStory{
-  padding: 30px;
-}
-.show-menu {
-  text-decoration: none;
-  color: #fff;
-  background: #19c589;
-  text-align: center;
-  padding: 10px 0;
+
+ul.topnav li.icon {
   display: none;
 }
-input[type=checkbox]{
-    display: none;
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
 }
-input[type=checkbox]:checked ~ #nav{
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
     display: block;
-}
-@media screen and (max-width : 760px){
-  ul {
-    position: static;
-    display: none;
-  }
-  li {
-    margin-bottom: 1px;
-  }
-  ul li, li a {
-    width: 100%;
-  }
-  .show-menu {
-    display:block;
+    text-align: left;
   }
 }
-</style>
-</head>
+
