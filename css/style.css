@@ -1,7 +1,8 @@
 
 body, html {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
+
 }
 
 a{
@@ -16,10 +17,10 @@ a{
   text-align: justify;
 }
 a.btn.btn-default.btn-lg.active{
-   font-family: 'Playfair Display', serif;
-  background-color: white;
-  border: 2px solid  #8a6d3b;
-  margin-top: 10px;
+ font-family: 'Playfair Display', serif;
+ background-color: white;
+ border: 2px solid  #8a6d3b;
+ margin-top: 10px;
 }
 a.btn.btn-default.btn-lg.active:hover{
   background-color: #8a6d3b;
@@ -27,13 +28,13 @@ a.btn.btn-default.btn-lg.active:hover{
 }
 
 button.btn.btn-default.btn-md.btn-block{
-   font-family: 'Playfair Display', serif;
-  background-color: white;
-  border: 2px solid  #8a6d3b;
-  margin-top: 10px;
+ font-family: 'Playfair Display', serif;
+ background-color: white;
+ border: 2px solid  #8a6d3b;
+ margin-top: 10px;
 }
 button.btn.btn-default.btn-md.btn-block:hover{
-    background-color: #8a6d3b;
+  background-color: #8a6d3b;
   color:white;
 }
 
@@ -115,7 +116,7 @@ button.btn.btn-default.btn-lg:hover{
   color: #fff;
   padding: 18px;
   font-size: 25px;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
 }
 .col-lg-6{
   padding-top: 20px;
@@ -171,10 +172,16 @@ div h2 {
   text-align: center;
 }
 div h3{
-   font-family: 'Playfair Display', serif;
+ font-family: 'Playfair Display', serif;
 }
 div h4{
-   font-family: 'Playfair Display', serif;
+ font-family: 'Playfair Display', serif;
+}
+h1.head span{
+  font-size: 90px;
+}
+h3.head span{
+  font-size: 30px;
 }
 img.about{
   height: 300px;
@@ -183,7 +190,7 @@ img.about{
 }
 .line{
   border-bottom: 0.5px solid rgba(58, 64, 73, 1);
-  left: 485px;
+  left: 490px;
   position: absolute;
   transform: rotate(89.1682deg) translateZ(0px);
   top: 220px;
@@ -199,6 +206,12 @@ p.center{
   padding: 10px;
   line-height: inherit;
 }
+p.text{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 10px;
+  line-height: inherit;
+}
 .page-header{
   color: #8a6d3b;
   font-family: 'Playfair Display', serif;
@@ -206,6 +219,10 @@ p.center{
   margin:-60px auto 100px;
   text-align: center;
   text-transform: uppercase;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 section {
   background: rgba(255, 255, 255, 0.96);
@@ -251,7 +268,36 @@ ul.topnav li a:hover {
 ul.topnav li.icon {
   display: none;
 }
+@media screen and (max-width: 1024px) {
+ .col-lg-4{
+  text-align: center;
+}
+.line{
+  border-bottom: 0.5px solid rgba(58, 64, 73, 1);
+  left: 380px;
+  position: absolute;
+  transform: rotate(89.1682deg) translateZ(0px);
+  top: 190px;
+  width: 180px;
+}
+}
 
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .col-lg-4{
+    text-align: center;
+  }
+  .line{
+    border-bottom: 0.5px solid rgba(58, 64, 73, 1);
+    left: 272px;
+    position: absolute;
+    transform: rotate(89.1682deg) translateZ(0px);
+    top: 190px;
+    width: 180p
+  }
+}
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
@@ -275,5 +321,36 @@ ul.topnav li.icon {
     display: block;
     text-align: left;
   }
+}
+
+@media (max-width: 414px) {
+  body{
+    overflow-x: hidden;
+  }
+  .caption span.border{
+    font-size: 30px;
+    left: 5px;
+    letter-spacing: 3px;
+    padding: 3px;
+    position: absolute;
+    top: 50px auto;
+  }
+  .col-lg-4{
+    text-align: center;
+  }
+  h1.head span{
+    font-size: inherit;
+  }
+  h3.head span{
+    font-size: inherit;
+  }
+  p{
+    font-size: initial;
+  }
+  p.text{
+    text-align: inherit;
+    padding: 0px;
+  }
+
 }
 
