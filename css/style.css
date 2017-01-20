@@ -170,6 +170,9 @@ div#about.featurette{
 .featurette-heading {
   font-size: 50px;
 }
+div.space{
+  margin-top: 25px;
+}
 footer {
   margin: 10px 0;
 }
